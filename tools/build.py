@@ -91,6 +91,10 @@ for page in sorted(SRC.glob('*.html')):
         doc = re.sub(r'<!--IMG ([a-z0-9-]+) sizes="([^"]*)" alt="([^"]*)"( eager)?-->', img_tag, src)
         assert '<!--IMG' not in doc
         doc = doc.replace('<!--JSONLD-->', jsonld(src))
+        def full_size(m):
+            w, h = Image.open(PUB / m.group(1)).size
+            return f'data-full="{m.group(1)}" data-fw="{w}" data-fh="{h}"'
+        doc = re.sub(r'data-full="(assets/img/app/[a-z0-9-]+\.webp)"', full_size, doc)
     doc = apply_typo(doc)
     # wersja plików w adresach: po wdrożeniu przeglądarki od razu pobierają nowe style i skrypt
     for rel in ('assets/css/site.css', 'assets/js/site.js'):
