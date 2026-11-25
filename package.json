@@ -1,0 +1,12 @@
+{
+  "name": "dentuvi-www",
+  "private": true,
+  "description": "Strona produktu Dentuvi (dentuvi.pl)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.166.0"
+  }
+}

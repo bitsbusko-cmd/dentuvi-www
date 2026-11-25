@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dentuvi — ERP dla klinik stomatologicznych i ortodontycznych</title>
+<meta name="description" content="Dentuvi łączy recepcję, gabinety, magazyn i finanse w jednym inteligentnym systemie dla klinik stomatologicznych i ortodontycznych. Umów prezentację.">
+<link rel="canonical" href="https://dentuvi.pl/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+<meta name="application-name" content="Dentuvi">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Dentuvi">
+<meta property="og:title" content="Dentuvi — cała klinika w jednym spojrzeniu">
+<meta property="og:description" content="Recepcja, gabinety, magazyn i finanse w jednym inteligentnym systemie dla klinik stomatologicznych i ortodontycznych.">
+<meta property="og:url" content="https://dentuvi.pl/">
+<meta property="og:image" content="https://dentuvi.pl/assets/img/og-dentuvi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dentuvi na laptopie i telefonie: ekran Dziś z podsumowaniem dnia w klinice">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans-pl.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<!--JSONLD-->
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 34 34"><rect width="34" height="34" rx="9" fill="#1a9a8f"/><path d="M17 9c-2-2-6.5-1.6-6.5 2.6 0 2.6 1.3 4 1.8 7.2.3 2 .9 3.7 2 3.7 1.2 0 1.2-3.6 2.7-3.6s1.5 3.6 2.7 3.6c1.1 0 1.7-1.7 2-3.7.5-3.2 1.8-4.6 1.8-7.2C23.5 7.4 19 7 17 9z" fill="#fdfefe"/></symbol>
+  <symbol id="sb" viewBox="0 0 76 16"><g fill="currentColor"><rect x="0" y="10" width="3" height="5.5" rx=".8"/><rect x="4.6" y="7" width="3" height="8.5" rx=".8"/><rect x="9.2" y="4" width="3" height="11.5" rx=".8"/><rect x="13.8" y="1" width="3" height="14.5" rx=".8"/><circle cx="31" cy="13.6" r="1.7"/><rect x="48" y="4.4" width="18.5" height="7.2" rx="1.9"/><rect x="72.6" y="6" width="1.8" height="4" rx=".9" opacity=".45"/></g><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M27.6 10.4a4.8 4.8 0 0 1 6.8 0M25 7.6a8.6 8.6 0 0 1 12 0M22.4 4.8a12.4 12.4 0 0 1 17.2 0"/><rect x="46" y="2.4" width="25.4" height="11.2" rx="3.4" stroke-width="1.2" opacity=".45"/></g></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5.5 15.5 12 9 18.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20h16M7 16.5v-4M12 16.5V7M17 16.5v-7"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 19.5a6 6 0 0 1 12 0M15.5 4.6a3.5 3.5 0 0 1 0 6.3M17.5 13.6a6 6 0 0 1 3.5 5.9"/></symbol>
+  <symbol id="i-coins" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17zM14.8 9.2c-.5-1-1.6-1.6-2.8-1.6-1.6 0-2.8.9-2.8 2.1 0 2.9 5.8 1.5 5.8 4.4 0 1.2-1.3 2.2-3 2.2-1.3 0-2.5-.7-3-1.7M12 6v1.6M12 16.3V18"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M4 7.5 12 4l8 3.5v9L12 20l-8-3.5zM4 7.5l8 3.5 8-3.5M12 11v9"/></symbol>
+  <symbol id="i-door" viewBox="0 0 24 24"><path d="M6 20V4.5h12V20M4 20h16M14.5 12.5h.01"/></symbol>
+  <symbol id="i-orto" viewBox="0 0 24 24"><path d="M3.5 12h17M5.5 8.5H10v7H5.5zM14 8.5h4.5v7H14z"/></symbol>
+  <symbol id="i-sms" viewBox="0 0 24 24"><path d="M4.5 5.5h15a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4.5 3.5v-3.5h-1a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zM8 11h.01M12 11h.01M16 11h.01"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3.5 6.5h10v9h-10zM13.5 9.5h3.8l3.2 3.3v2.7h-7zM7 18.5a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6zM17 18.5a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6z"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 4.5a4.5 4.5 0 0 0-4.3 5.8L4.6 16a2.1 2.1 0 0 0 3 3l5.6-5.6a4.5 4.5 0 0 0 5.8-4.3l-2.6 2.6-2.5-.6-.6-2.5z"/></symbol>
+  <symbol id="i-eu" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17zM3.5 12h17M12 3.5c2.3 2.3 3.4 5.2 3.4 8.5s-1.1 6.2-3.4 8.5M12 3.5C9.7 5.8 8.6 8.7 8.6 12s1.1 6.2 3.4 8.5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M6.5 10.5h11a1 1 0 0 1 1 1V19a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1v-7.5a1 1 0 0 1 1-1zM8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5M12 14.5v2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 19 6v5.5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6zM8.8 12l2.2 2.2 4.2-4.4"/></symbol>
+  <symbol id="i-log" viewBox="0 0 24 24"><path d="M6.5 3.5h8l3 3V20a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5zM9 10h6M9 13.5h6M9 17h4"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3.5h7l4 4V20a.5.5 0 0 1-.5.5h-10.5a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5zM13.5 3.5V8h4.5M9 13.5l2 2 4-4"/></symbol>
+  <symbol id="i-restore" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v3.8h3.8M12 8v4.5l3 2"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Dentuvi, początek strony"><svg aria-hidden="true"><use href="#logo"/></svg><span>Dentuvi</span></a>
+    <nav class="menu" id="menu" aria-label="Główna nawigacja">
+      <a href="#dzis">Przegląd</a>
+      <a href="#zarzad">Zarząd</a>
+      <a href="#funkcje">Funkcje</a>
+      <a href="#bezpieczenstwo">Bezpieczeństwo</a>
+      <a href="#wdrozenie">Wdrożenie</a>
+      <a href="#pytania">Pytania</a>
+      <a class="m-login" href="https://erp.dentuvi.pl/">Zaloguj się do Dentuvi</a>
+    </nav>
+    <div class="nav-act">
+      <a class="nav-login" href="https://erp.dentuvi.pl/">Zaloguj się</a>
+      <a class="btn btn-pri btn-xs" href="#kontakt">Umów prezentację</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><svg class="i m" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i x" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="tresc">
+
+<section class="hero" id="top" aria-labelledby="h-top">
+  <div class="wrap hero-in">
+    <svg class="hero-logo" viewBox="0 0 34 34" aria-hidden="true"><use href="#logo"/></svg>
+    <h1 id="h-top">Cała klinika.<br>W jednym spojrzeniu.</h1>
+    <p class="hero-sub">Dentuvi łączy recepcję, gabinety, magazyn i finanse w jednym inteligentnym systemie dla klinik stomatologicznych i ortodontycznych.</p>
+    <div class="hero-cta">
+      <a class="btn btn-pri" href="#kontakt">Umów prezentację</a>
+      <a class="lnk" href="#dzis">Zobacz, jak działa<svg class="i" aria-hidden="true"><use href="#i-chev"/></svg></a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stage">
+      <div class="mac"><div class="mac-lid"><div class="mac-scr"><!--IMG dzis sizes="(min-width: 1180px) 990px, 92vw" alt="Ekran Dziś w Dentuvi: powitanie, podsumowanie dnia w klinice, gabinety na żywo i podpowiedzi systemu" eager--></div></div><div class="mac-base"></div></div>
+      <div class="iph"><div class="iph-b"><div class="iph-scr"><div class="iph-sb"><span>10:09</span><i class="isl"></i><svg aria-hidden="true"><use href="#sb"/></svg></div><!--IMG m-dzis sizes="(min-width: 1180px) 210px, 22vw" alt="Ekran Dziś w Dentuvi na telefonie" eager--></div></div></div>
+    </div>
+    <p class="note">Prawdziwe ekrany Dentuvi z danymi demonstracyjnymi.</p>
+  </div>
+</section>
+
+<section class="band mani" id="dlaczego" aria-labelledby="h-mani">
+  <div class="wrap">
+    <h2 class="h2 rv" id="h-mani">Mniej spraw do pamiętania.<br>Więcej uwagi dla pacjenta.</h2>
+    <p class="big rv"><b>Prowadzenie kliniki to setki drobnych decyzji każdego dnia.</b> Kto czeka w poczekalni, który gabinet jest wolny, czy materiały wystarczą na jutro, czy pacjent opłacił ratę. Dentuvi zbiera te informacje w jednym miejscu i podaje je wtedy, gdy są potrzebne.</p>
+    <div class="uvi rv">
+      <div><span class="k">Unified</span><h3>Jeden system</h3><p>Recepcja, gabinety, magazyn i zarząd pracują na tych samych danych.</p></div>
+      <div><span class="k">Vision</span><h3>Pełny obraz</h3><p>Stan dnia, gabinetów i finansów widoczny na bieżąco.</p></div>
+      <div><span class="k">Intelligence</span><h3>Trafne podpowiedzi</h3><p>System wskazuje, co wymaga uwagi, i prowadzi do rozwiązania.</p></div>
+    </div>
+    <p class="uvi-note">Unified Vision &amp; Intelligence. Od tych słów pochodzi nazwa Dentuvi.</p>
+  </div>
+</section>
+
+<section class="band b-pearl" id="dzis" aria-labelledby="h-dzis">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="lbl">Ekran Dziś</p>
+      <h2 class="h2" id="h-dzis">Każdy dzień zaczyna się<br>od jednego ekranu.</h2>
+      <p class="sub">Po zalogowaniu każdy widzi swój dzień: lekarz swoje wizyty, asystentka swój gabinet, recepcja i właściciel całą klinikę. Jedno zdanie podsumowuje sytuację, a gabinety pokazują swój stan na żywo.</p>
+    </div>
+    <div class="dz rv">
+      <figure class="scr"><!--IMG dzis-powitanie sizes="(min-width: 1180px) 900px, 84vw" alt="Powitanie na ekranie Dziś: liczba wizyt w klinice, pacjenci w gabinetach i w poczekalni, wpłaty i przychód"--></figure>
+      <figure class="scr dz-rooms"><!--IMG dzis-gabinety sizes="(min-width: 1180px) 330px, 56vw" alt="Karta Gabinety teraz: stan każdego gabinetu na żywo"--></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band b-night" id="podpowiedzi" aria-labelledby="h-podp">
+  <div class="wrap split">
+    <div class="split-txt head l rv">
+      <p class="lbl">Podpowiedzi</p>
+      <h2 class="h2" id="h-podp">Najpierw to, co najpilniejsze.</h2>
+      <p class="sub">Dentuvi porządkuje sprawy od najpilniejszych: pacjent czeka dłużej niż 10 minut, jutrzejsze wizyty nie są potwierdzone, rata minęła, materiał kończy się w magazynie. Każda podpowiedź prowadzi tam, gdzie sprawę można załatwić.</p>
+      <p class="small">Zakres podpowiedzi zależy od roli i uprawnień.</p>
+    </div>
+    <div class="glow rv"><figure class="scr dark"><!--IMG podpowiedzi sizes="(min-width: 1180px) 640px, 92vw" alt="Lista Na co zwrócić uwagę w trybie ciemnym: sprawy uporządkowane od najpilniejszych"--></figure></div>
+  </div>
+</section>
+
+<section class="band" id="pacjent" aria-labelledby="h-pac">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="lbl">Karta pacjenta</p>
+      <h2 class="h2" id="h-pac">Pacjent w centrum uwagi.</h2>
+      <p class="sub">Karta pacjenta zaczyna się od spraw, które wymagają decyzji: plan leczenia czekający na akceptację, nieaktualny wywiad medyczny, brak zgody, zaległość. Najbliższe wizyty i historia leczenia są na jednej osi czasu.</p>
+    </div>
+    <figure class="scr show rv"><!--IMG pacjent sizes="(min-width: 1240px) 1180px, 94vw" alt="Karta pacjenta w Dentuvi: podpowiedzi dla pacjenta, najbliższe wizyty i oś czasu leczenia"--></figure>
+  </div>
+</section>
+
+<section class="band b-pearl" id="wizyta" aria-labelledby="h-wiz">
+  <div class="wrap split">
+    <div class="split-txt head l rv">
+      <p class="lbl">Wizyta przy fotelu</p>
+      <h2 class="h2" id="h-wiz">Przy fotelu uwaga należy do pacjenta.</h2>
+      <p class="sub">Diagram zębów w notacji FDI, świadczenia z powierzchniami i plan leczenia w jednym widoku. Po zakończeniu wizyty Dentuvi aktualizuje stan zębów, rozchoduje materiały z receptur i przekazuje należność do recepcji.</p>
+      <ul class="facts">
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Ostrzeżenia medyczne widoczne od pierwszej chwili wizyty</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Skierowania na RTG, pantomogram i tomografię CBCT</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Zlecenia do pracowni protetycznej z kontrolą terminu</li>
+      </ul>
+    </div>
+    <figure class="scr bleed rv"><!--IMG wizyta sizes="(min-width: 1180px) 760px, 94vw" alt="Wizyta przy fotelu w Dentuvi: diagram zębów w notacji FDI i przyciski zakończenia wizyty, skierowania i zlecenia do pracowni"--></figure>
+  </div>
+</section>
+
+<section class="band b-night" id="zarzad" aria-labelledby="h-zarz">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="lbl">Pulpit zarządczy</p>
+      <h2 class="h2" id="h-zarz">Wynik kliniki. Każdego dnia.</h2>
+      <p class="sub">Przychód od początku miesiąca, prognoza na jego koniec, wykorzystanie foteli i przychód na godzinę pracy. Właściciel widzi kondycję kliniki na bieżąco, bez arkuszy i bez czekania na zamknięcie miesiąca.</p>
+    </div>
+    <div class="stage-n rv">
+      <div class="mac"><div class="mac-lid"><div class="mac-scr"><!--IMG pulpit-ciemny sizes="(min-width: 1180px) 990px, 92vw" alt="Pulpit zarządczy Dentuvi w trybie ciemnym: przychód miesiąca, prognoza, wykres i podsumowanie dnia"--></div></div><div class="mac-base"></div></div>
+      <div class="iph dark"><div class="iph-b"><div class="iph-scr"><div class="iph-sb"><span>10:09</span><i class="isl"></i><svg aria-hidden="true"><use href="#sb"/></svg></div><!--IMG m-pulpit-ciemny sizes="(min-width: 1180px) 200px, 26vw" alt="Pulpit zarządczy Dentuvi na telefonie w trybie ciemnym"--></div></div></div>
+    </div>
+    <div class="cols rv">
+      <div><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-chart"/></svg></span><h3>Rentowność</h3><p>Marże według lekarzy, gabinetów i kategorii świadczeń.</p></div>
+      <div><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span><h3>Rozliczenia lekarzy</h3><p>Siedem modeli współpracy, od procentu od przychodu po najem fotela.</p></div>
+      <div><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-coins"/></svg></span><h3>Należności i prognozy</h3><p>Struktura wiekowa należności i prognoza wpływów.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="raty" aria-labelledby="h-raty">
+  <div class="wrap split rev">
+    <div class="split-txt head l rv">
+      <p class="lbl">Raty</p>
+      <h2 class="h2" id="h-raty">Raty bez ręcznego pilnowania.</h2>
+      <p class="sub">Plan leczenia, leczenie ortodontyczne lub dowolną należność rozłożysz na raty z wpłatą własną. Dentuvi przypomina pacjentom o terminach wiadomością SMS i pokazuje zaległości, zanim staną się problemem.</p>
+      <ul class="facts">
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Przypomnienia przed terminem, w dniu płatności i po nim</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Cisza nocna i limit przypomnień dla każdej raty</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Zmiana harmonogramu z przeniesieniem nieopłaconej reszty</li>
+      </ul>
+    </div>
+    <figure class="scr rv"><!--IMG raty sizes="(min-width: 1180px) 680px, 94vw" alt="Plan ratalny w Dentuvi: kwota planu, spłacona część, następna rata i harmonogram spłat"--></figure>
+  </div>
+</section>
+
+<section class="band b-pearl" id="mobilnie" aria-labelledby="h-mob">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="lbl">Na każdym urządzeniu</p>
+      <h2 class="h2" id="h-mob">Klinika zawsze pod ręką.</h2>
+      <p class="sub">Dentuvi działa w przeglądarce na komputerze, tablecie i telefonie, bez instalowania aplikacji. Właściciel sprawdzi wynik dnia, lekarz swoje wizyty, a recepcja terminarz, gdziekolwiek są.</p>
+    </div>
+    <div class="phones rv">
+      <figure><div class="iph"><div class="iph-b"><div class="iph-scr"><div class="iph-sb"><span>10:09</span><i class="isl"></i><svg aria-hidden="true"><use href="#sb"/></svg></div><!--IMG m-dzis sizes="(min-width: 980px) 300px, 80vw" alt="Ekran Dziś na telefonie"--></div></div></div><figcaption>Dziś<span>Podsumowanie dnia i podpowiedzi</span></figcaption></figure>
+      <figure><div class="iph"><div class="iph-b"><div class="iph-scr"><div class="iph-sb"><span>10:09</span><i class="isl"></i><svg aria-hidden="true"><use href="#sb"/></svg></div><!--IMG m-pacjent sizes="(min-width: 980px) 300px, 80vw" alt="Karta pacjenta na telefonie"--></div></div></div><figcaption>Karta pacjenta<span>Sprawy do decyzji i najbliższe wizyty</span></figcaption></figure>
+      <figure><div class="iph"><div class="iph-b"><div class="iph-scr"><div class="iph-sb"><span>10:09</span><i class="isl"></i><svg aria-hidden="true"><use href="#sb"/></svg></div><!--IMG m-terminarz sizes="(min-width: 980px) 300px, 80vw" alt="Terminarz na telefonie"--></div></div></div><figcaption>Terminarz<span>Wizyty, potwierdzenia i stan gabinetów</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="funkcje" aria-labelledby="h-fun">
+  <div class="wrap">
+    <div class="head rv">
+      <h2 class="h2" id="h-fun">Wszystko, czego potrzebuje<br>nowoczesna klinika.</h2>
+      <p class="sub">Jeden system zamiast kilku programów, arkuszy i zeszytów.</p>
+    </div>
+    <div class="bento">
+      <article class="tile c4 rv"><h3>Terminarz gabinetów</h3><p>Grafik lekarzy, stan gabinetów na żywo, kontrola konfliktów i wyszukiwanie wolnych terminów.</p><div class="tile-img"><!--IMG terminarz sizes="(min-width: 1180px) 760px, 90vw" alt="Terminarz gabinetów z wizytami i stanem gabinetów"--></div></article>
+      <article class="tile c2 pal rv"><h3>Wyszukiwarka do wszystkiego</h3><p>Skrót Ctrl K otwiera jedno pole: pacjenci, ekrany i działania.</p><div class="tile-img"><!--IMG paleta sizes="(min-width: 1180px) 380px, 90vw" alt="Paleta poleceń: ostatnio otwierani pacjenci i szybkie działania"--></div></article>
+      <article class="tile c3 rv"><h3>Grafik zespołu</h3><p>Tygodniowy grafik, urlopy i zastępstwa. Wizyty nieobecnego lekarza system proponuje przełożyć.</p><div class="tile-img"><!--IMG grafik sizes="(min-width: 1180px) 570px, 90vw" alt="Tygodniowy grafik zespołu w gabinetach"--></div></article>
+      <article class="tile c3 rv"><h3>Rejestr sterylizacji</h3><p>Cykle autoklawu oraz testy Bowiego-Dicka, szczelności i biologiczne, z wydrukiem.</p><div class="tile-img"><!--IMG sterylizacja sizes="(min-width: 1180px) 570px, 90vw" alt="Rejestr sterylizacji z wynikami testów i cykli autoklawu"--></div></article>
+      <article class="tile c2 rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-box"/></svg></span><h3>Magazyn i zamówienia</h3><p>Partie i terminy ważności. Propozycje zamówień liczone ze stanów minimalnych i terminarza na 14 dni.</p></article>
+      <article class="tile c2 rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-door"/></svg></span><h3>Panel gabinetu</h3><p>Przygotowanie do kolejnych wizyt, zaopatrzenie szafki i listy kontrolne higieny.</p></article>
+      <article class="tile c2 rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-orto"/></svg></span><h3>Ortodoncja</h3><p>Leczenie ortodontyczne z pakietem płatności, który można rozłożyć na raty.</p></article>
+      <article class="tile c2 rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-sms"/></svg></span><h3>Komunikacja SMS</h3><p>Przypomnienia o wizytach z linkiem do potwierdzenia oraz przypomnienia o ratach.</p></article>
+      <article class="tile c2 rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-truck"/></svg></span><h3>Dostawcy i serwisy</h3><p>Kartoteka kontrahentów z umowami, warunkami współpracy i historią serwisu sprzętu.</p></article>
+      <article class="tile c2 rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-wrench"/></svg></span><h3>Przeglądy i badania</h3><p>Terminy przeglądów sprzętu i badań personelu z przypomnieniami.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band b-pearl" id="bezpieczenstwo" aria-labelledby="h-bez">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="lbl">Prywatność i bezpieczeństwo</p>
+      <h2 class="h2" id="h-bez">Dane pacjentów pod ochroną.</h2>
+      <p class="sub">Dentuvi chroni dane na każdym etapie: od logowania, przez dostęp do dokumentacji, po kopię zapasową.</p>
+    </div>
+    <ul class="secu">
+      <li class="rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-eu"/></svg></span><h3>Dane w Unii Europejskiej</h3><p>Baza danych z jurysdykcją Unii Europejskiej.</p></li>
+      <li class="rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg></span><h3>Logowanie dwuetapowe</h3><p>Kod z aplikacji uwierzytelniającej i blokada konta po nieudanych próbach logowania.</p></li>
+      <li class="rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Uprawnienia według ról</h3><p>Każdy widzi to, czego potrzebuje. Recepcja nie ma dostępu do dokumentacji medycznej.</p></li>
+      <li class="rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-log"/></svg></span><h3>Dziennik zdarzeń</h3><p>Rejestr logowań, wglądu w dokumentację medyczną, operacji finansowych i zmian konfiguracji.</p></li>
+      <li class="rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg></span><h3>Narzędzia RODO</h3><p>Kopia danych pacjenta i anonimizacja z poszanowaniem obowiązku przechowywania dokumentacji.</p></li>
+      <li class="rv"><span class="ic"><svg class="i" aria-hidden="true"><use href="#i-restore"/></svg></span><h3>Kopie zapasowe</h3><p>Odtworzenie bazy danych z dowolnej chwili z ostatnich 30 dni.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="wdrozenie" aria-labelledby="h-wdr">
+  <div class="wrap split">
+    <div class="split-txt head l rv">
+      <p class="lbl">Wdrożenie</p>
+      <h2 class="h2" id="h-wdr">Gotowość do pracy krok po kroku.</h2>
+      <p class="sub">Kreator przeprowadza przez konfigurację kliniki w 11 krokach. Szybki start na podstawie kilku odpowiedzi tworzy placówki, gabinety, szafki magazynowe i wzorcowy cennik. Po uruchomieniu systemu kreator staje się panelem administracyjnym.</p>
+      <ol class="steps">
+        <li><div><b>Prezentacja</b><span>Pokazujemy Dentuvi na przykładzie kliniki podobnej do Twojej.</span></div></li>
+        <li><div><b>Szybki start</b><span>Kilka odpowiedzi tworzy strukturę kliniki i wzorcowy cennik.</span></div></li>
+        <li><div><b>Zespół i zasady</b><span>Personel z umowami i grafikiem, przypomnienia SMS i zasady rat.</span></div></li>
+        <li><div><b>Uruchomienie</b><span>Po ćwiczeniach na danych demonstracyjnych klinika zaczyna pracę.</span></div></li>
+      </ol>
+    </div>
+    <figure class="scr bleed rv"><!--IMG kreator sizes="(min-width: 1180px) 760px, 94vw" alt="Kreator wdrożenia Dentuvi: kroki konfiguracji, szybki start i wybór modułów"--></figure>
+  </div>
+</section>
+
+<section class="band b-pearl" id="pytania" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="head rv"><h2 class="h2" id="h-faq">Pytania i odpowiedzi</h2></div>
+    <div class="faq rv">
+      <details class="qa"><summary>Czy Dentuvi sprawdzi się w mniejszym gabinecie?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Tak. System działa zarówno w gabinecie z jednym fotelem, jak i w klinice z kilkoma placówkami. Moduły, których klinika nie potrzebuje, można wyłączyć.</p></details>
+      <details class="qa"><summary>Czy trzeba instalować oprogramowanie?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Nie. Dentuvi działa w przeglądarce na komputerze, tablecie i telefonie. Klinika nie potrzebuje własnego serwera.</p></details>
+      <details class="qa"><summary>Jak Dentuvi rozlicza lekarzy?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Każdy lekarz może mieć własny model rozliczenia: procent od przychodu, procent po kosztach pracowni, progi procentowe, stawkę godzinową, pensję z premią lub najem fotela. Lekarz widzi swoje rozliczenie na bieżąco.</p></details>
+      <details class="qa"><summary>Czy Dentuvi obsługuje leczenie ortodontyczne?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Tak. Klinika może być jednocześnie stomatologiczna i ortodontyczna. Leczenie ortodontyczne ma pakiet płatności, który można rozłożyć na raty.</p></details>
+      <details class="qa"><summary>Gdzie są przechowywane dane pacjentów?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>W bazie danych z jurysdykcją Unii Europejskiej. Dostęp chronią uprawnienia według ról, logowanie dwuetapowe i dziennik zdarzeń, a bazę można odtworzyć z dowolnej chwili z ostatnich 30 dni.</p></details>
+      <details class="qa"><summary>Jak wygląda wdrożenie?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Kreator prowadzi przez 11 kroków: od struktury kliniki, przez zespół i cennik, po przypomnienia SMS i zasady rat. Przed uruchomieniem zespół może przećwiczyć pracę na danych demonstracyjnych.</p></details>
+      <details class="qa"><summary>Ile kosztuje Dentuvi?<svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Cena zależy od liczby placówek, gabinetów i wybranych modułów. Wycenę przygotujemy po prezentacji.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band b-cta" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap cta-grid">
+    <div class="cta-txt">
+      <h2 class="h2" id="h-kontakt">Zobacz Dentuvi w działaniu.</h2>
+      <p>Umów prezentację. Pokażemy, jak Dentuvi może wspierać pracę Twojej kliniki: od recepcji, przez gabinety, po wynik finansowy.</p>
+      <ul class="cta-list">
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Prezentacja bez zobowiązań</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Wycena dopasowana do liczby placówek, gabinetów i modułów</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Odpowiedzi na pytania o wdrożenie i bezpieczeństwo danych</li>
+      </ul>
+      <div class="cta-alt">
+        <p>Wolisz e-mail? Napisz na <a href="mailto:kontakt@dentuvi.pl">kontakt@dentuvi.pl</a></p>
+        <p>Masz już konto? <a href="https://erp.dentuvi.pl/">Zaloguj się na erp.dentuvi.pl</a></p>
+      </div>
+    </div>
+    <form class="form" id="demo-form" action="/api/demo" method="post" novalidate>
+      <h3>Umów prezentację</h3>
+      <p class="fsub">Odpowiemy, aby ustalić dogodny termin.</p>
+      <div class="fields">
+        <div class="fld-row">
+          <div class="fld"><label for="f-name">Imię i nazwisko</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120"><span class="err" id="f-name-err">Podaj imię i nazwisko.</span></div>
+          <div class="fld"><label for="f-clinic">Nazwa kliniki</label><input id="f-clinic" name="clinic" type="text" autocomplete="organization" required maxlength="160"><span class="err" id="f-clinic-err">Podaj nazwę kliniki.</span></div>
+        </div>
+        <div class="fld-row">
+          <div class="fld"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="160"><span class="err" id="f-email-err">Podaj adres e-mail w formacie nazwa@domena.pl.</span></div>
+          <div class="fld"><label for="f-phone">Telefon <span class="opt">(opcjonalnie)</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="40"></div>
+        </div>
+        <div class="fld"><label for="f-rooms">Liczba gabinetów <span class="opt">(opcjonalnie)</span></label>
+          <select id="f-rooms" name="rooms"><option value="">Wybierz</option><option value="1">1 gabinet</option><option value="2-3">2–3 gabinety</option><option value="4-6">4–6 gabinetów</option><option value="7+">7 gabinetów i więcej</option></select>
+        </div>
+        <div class="fld"><label for="f-msg">Wiadomość <span class="opt">(opcjonalnie)</span></label><textarea id="f-msg" name="message" rows="3" maxlength="2000" placeholder="Na przykład: dwie placówki, leczenie zachowawcze i ortodontyczne"></textarea></div>
+        <label class="chk" id="f-consent-wrap"><input type="checkbox" id="f-consent" name="consent" value="tak" required><span>Zgadzam się na kontakt w sprawie prezentacji Dentuvi. Zasady przetwarzania danych opisuje <a href="polityka-prywatnosci.html">polityka prywatności</a>.</span></label>
+        <div class="hp" aria-hidden="true"><label for="f-web">Nie wypełniaj tego pola</label><input id="f-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      </div>
+      <button class="btn btn-pri btn-wide" type="submit">Umów prezentację</button>
+      <p class="form-fine">Pola bez dopisku „opcjonalnie” są wymagane.</p>
+      <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div class="ftr-about">
+        <a class="brand" href="#top" aria-label="Dentuvi, początek strony"><svg aria-hidden="true"><use href="#logo"/></svg><span>Dentuvi</span></a>
+        <p>System ERP dla klinik stomatologicznych i ortodontycznych.</p>
+        <p class="motto">Unified Vision &amp; Intelligence</p>
+      </div>
+      <div>
+        <h3>Produkt</h3>
+        <ul><li><a href="#dzis">Ekran Dziś</a></li><li><a href="#pacjent">Karta pacjenta</a></li><li><a href="#wizyta">Wizyta przy fotelu</a></li><li><a href="#zarzad">Pulpit zarządczy</a></li><li><a href="#raty">Raty</a></li><li><a href="#funkcje">Funkcje</a></li></ul>
+      </div>
+      <div>
+        <h3>Informacje</h3>
+        <ul><li><a href="#bezpieczenstwo">Bezpieczeństwo</a></li><li><a href="#wdrozenie">Wdrożenie</a></li><li><a href="#pytania">Pytania i odpowiedzi</a></li><li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li></ul>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul><li><a href="mailto:kontakt@dentuvi.pl">kontakt@dentuvi.pl</a></li><li><a href="#kontakt">Umów prezentację</a></li><li><a href="https://erp.dentuvi.pl/">Zaloguj się do Dentuvi</a></li></ul>
+      </div>
+    </div>
+    <div class="ftr-bot"><span>© 2026 Dentuvi. Wszelkie prawa zastrzeżone.</span><span>Ekrany aplikacji przedstawiają dane demonstracyjne. Strona nie używa plików cookie do śledzenia.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

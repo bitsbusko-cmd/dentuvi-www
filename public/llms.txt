@@ -1,0 +1,32 @@
+# Dentuvi
+
+> Dentuvi to system ERP dla klinik stomatologicznych i ortodontycznych w Polsce. Łączy recepcję, gabinety, magazyn i finanse w jednym systemie, który działa w przeglądarce na komputerze, tablecie i telefonie. Zakończenie wizyty przy fotelu od razu aktualizuje diagram zębów, rozchodowuje materiały z receptur i przekazuje należność do recepcji. Nazwa pochodzi od motta Unified Vision & Intelligence.
+
+## Funkcje
+- Ekran Dziś: podsumowanie dnia dopasowane do roli, stan gabinetów na żywo i podpowiedzi uporządkowane od najpilniejszych.
+- Karta pacjenta: sprawy wymagające decyzji (plan leczenia, wywiad medyczny, zgody, zaległości), najbliższe wizyty i historia leczenia na jednej osi czasu.
+- Wizyta przy fotelu: diagram zębów w notacji FDI, świadczenia z powierzchniami, plan leczenia, ostrzeżenia medyczne, skierowania na RTG, pantomogram i tomografię CBCT, zlecenia do pracowni protetycznej z kontrolą terminu.
+- Terminarz gabinetów: grafik lekarzy, stan gabinetów na żywo, kontrola konfliktów, wyszukiwanie wolnych terminów, przypomnienia i potwierdzenia SMS, lista oczekujących.
+- Pulpit zarządczy: przychód od początku miesiąca i prognoza, wykorzystanie foteli, przychód na godzinę pracy, marża według lekarzy, gabinetów i kategorii świadczeń, siedem modeli rozliczeń lekarzy, struktura wiekowa należności i prognoza wpływów.
+- Raty: harmonogram z wpłatą własną, przypomnienia SMS przed terminem, w dniu płatności i po nim, cisza nocna i limit przypomnień, zmiana harmonogramu z przeniesieniem nieopłaconej reszty.
+- Ortodoncja: leczenie ortodontyczne z pakietem płatności; klinika może być jednocześnie stomatologiczna i ortodontyczna.
+- Magazyn: partie i terminy ważności, dokumenty magazynowe, inwentaryzacja, propozycje zamówień ze stanów minimalnych i terminarza na 14 dni.
+- Panel gabinetu: przygotowanie do kolejnych wizyt, zaopatrzenie szafki, listy kontrolne higieny, rejestr sterylizacji (cykle autoklawu, testy Bowiego-Dicka, szczelności i biologiczne) z wydrukiem.
+- Grafik zespołu: tygodniowy grafik, urlopy i zastępstwa; dla wizyt nieobecnego lekarza system proponuje przełożenie.
+- Dostawcy i serwisy, przeglądy sprzętu i badania personelu z przypomnieniami.
+- Wyszukiwarka: skrót Ctrl K otwiera jedno pole dla pacjentów, ekranów i działań.
+
+## Bezpieczeństwo
+- Baza danych z jurysdykcją Unii Europejskiej.
+- Logowanie dwuetapowe z kodem z aplikacji uwierzytelniającej i blokadą konta po nieudanych próbach logowania.
+- Uprawnienia według ról, dziennik zdarzeń, kopia danych pacjenta i anonimizacja z poszanowaniem obowiązku przechowywania dokumentacji.
+- Odtworzenie bazy danych z dowolnej chwili z ostatnich 30 dni.
+
+## Wdrożenie
+- Kreator prowadzi przez konfigurację kliniki w 11 krokach; szybki start tworzy placówki, gabinety, szafki magazynowe i wzorcowy cennik. Po uruchomieniu kreator staje się panelem administracyjnym.
+
+## Linki
+- [Strona produktu](https://dentuvi.pl/)
+- [Logowanie do aplikacji](https://erp.dentuvi.pl/)
+- [Polityka prywatności](https://dentuvi.pl/polityka-prywatnosci.html)
+- Kontakt: kontakt@dentuvi.pl

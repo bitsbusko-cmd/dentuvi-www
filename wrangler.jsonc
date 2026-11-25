@@ -1,0 +1,25 @@
+{
+  // Strona dentuvi.pl: zasoby statyczne z public/ oraz Worker obsługujący formularz prezentacji (POST /api/demo)
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "dentuvi-www",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+  // Wysyłka zgłoszeń przez Cloudflare Email Service (wymaga Email Routing w strefie dentuvi.pl)
+  "send_email": [{ "name": "MAIL" }],
+  "vars": {
+    // Adres, na który trafiają zgłoszenia. Bez planu płatnego musi to być zweryfikowany adres docelowy w Email Routing.
+    "DEMO_TO": "kontakt@dentuvi.pl",
+    // Nadawca: dowolny adres w domenie z włączonym Email Routing
+    "DEMO_FROM": "formularz@dentuvi.pl"
+  },
+  // Ochrona formularza: najwyżej 5 zgłoszeń na minutę z jednego adresu IP
+  "ratelimits": [{ "name": "DEMO_LIMIT", "namespace_id": "2611", "simple": { "limit": 5, "period": 60 } }],
+  "observability": { "enabled": true }
+}
