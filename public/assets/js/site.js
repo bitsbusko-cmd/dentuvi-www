@@ -8,9 +8,11 @@
   const menu = doc.getElementById('menu');
   // treść pod otwartym menu jest nieaktywna: fokus i kliknięcia zostają w menu
   const behind = [doc.getElementById('tresc'), doc.querySelector('.ftr')].filter(Boolean);
+  const scrim = doc.querySelector('.nav-scrim');
   const setMenu = open => {
     body.classList.toggle('nav-open', open);
     behind.forEach(el => { el.inert = open; });
+    if (scrim) scrim.hidden = !open;
     if (menuBtn) {
       menuBtn.setAttribute('aria-expanded', String(open));
       menuBtn.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
@@ -23,6 +25,7 @@
       if (open) { const first = menu.querySelector('a'); if (first) first.focus({ preventScroll: true }); }
     });
     menu.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+    if (scrim) scrim.addEventListener('click', () => setMenu(false));
     window.addEventListener('keydown', e => { if (e.key === 'Escape' && body.classList.contains('nav-open')) { setMenu(false); menuBtn.focus(); } });
     const wide = window.matchMedia('(min-width: 1061px)');
     if (wide.addEventListener) wide.addEventListener('change', e => { if (e.matches) setMenu(false); });
