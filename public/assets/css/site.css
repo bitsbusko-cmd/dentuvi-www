@@ -140,6 +140,7 @@ body.nav-open .menu-btn .bars::after{top:5px;transform:rotate(-45deg)}
 .mani .h2{margin-top:0;text-align:center;font-size:clamp(36px,5.4vw,74px)}
 .mani .lbl{text-align:center;margin-bottom:16px}
 .big{max-width:960px;margin:clamp(30px,3.2vw,44px) auto 0;font:500 clamp(19px,1.8vw,26px)/1.5 var(--d);letter-spacing:-.016em;color:var(--muted);text-align:center}
+.big+.big{margin-top:clamp(14px,1.5vw,20px)}
 .big b{font-weight:600;color:var(--ink)}
 .uvi-title{display:flex;align-items:center;gap:clamp(16px,2.4vw,28px);margin-top:clamp(64px,8vw,112px);color:var(--teal-ink);font:600 clamp(19px,1.9vw,24px)/1.2 var(--d);letter-spacing:-.015em;white-space:nowrap}
 .uvi-title::before,.uvi-title::after{content:"";flex:1;height:1px;background:var(--line)}
