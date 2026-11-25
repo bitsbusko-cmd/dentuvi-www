@@ -2,7 +2,7 @@
 
 Użycie: python3 tools/build.py   (wymaga Pillow: pip install pillow)
 """
-import json, re, html, pathlib
+import hashlib, json, re, html, pathlib
 from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -92,5 +92,9 @@ for page in sorted(SRC.glob('*.html')):
         assert '<!--IMG' not in doc
         doc = doc.replace('<!--JSONLD-->', jsonld(src))
     doc = apply_typo(doc)
+    # wersja plików w adresach: po wdrożeniu przeglądarki od razu pobierają nowe style i skrypt
+    for rel in ('assets/css/site.css', 'assets/js/site.js'):
+        ver = hashlib.sha256((PUB / rel).read_bytes()).hexdigest()[:10]
+        doc = re.sub(re.escape(rel) + r'(\?v=[0-9a-f]+)?"', rel + '?v=' + ver + '"', doc)
     (PUB / page.name).write_text(doc, encoding='utf-8')
     print('ok', page.name, len(doc), 'bytes', doc.count('<img '), 'images')
