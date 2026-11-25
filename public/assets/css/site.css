@@ -302,8 +302,9 @@ body.nav-open .menu-btn .m{display:none}
 @media (max-width:1060px){
   .menu-btn{display:grid}
   .nav-login{display:none}
-  .menu{position:fixed;inset:56px 0 0 0;display:none;flex-direction:column;align-items:stretch;gap:0;margin:0;padding:18px var(--gut) 40px;background:rgba(255,255,255,.97);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);overflow-y:auto}
-  body.nav-open{overflow:hidden}
+  .menu{position:fixed;inset:57px 0 0 0;display:none;flex-direction:column;align-items:stretch;gap:0;margin:0;padding:18px var(--gut) max(40px,env(safe-area-inset-bottom));background:#fff;overflow-y:auto;overscroll-behavior:contain}
+  html:has(body.nav-open){overflow:hidden}
+body.nav-open .nav{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}
   body.nav-open .menu{display:flex}
   .menu a{padding:16px 4px;border-bottom:1px solid var(--line);border-radius:0;font:600 24px/1.2 var(--d);letter-spacing:-.025em;color:var(--ink)}
   .menu .m-login{display:block;color:var(--teal-ink)}
@@ -384,6 +385,12 @@ html:has(.lb[open]){overflow:hidden}
   .lb[open]::backdrop{animation:lb-fade .3s ease}
   @keyframes lb-in{from{opacity:0;transform:scale(.97)}}
   @keyframes lb-fade{from{opacity:0}}
+}
+
+/* menu na wąskich ekranach: łagodne wejście */
+@media (prefers-reduced-motion:no-preference) and (max-width:1060px){
+  body.nav-open .menu{animation:menu-in .28s var(--ease)}
+  @keyframes menu-in{from{opacity:0;transform:translateY(-8px)}}
 }
 
 /* klawisze skrótów */

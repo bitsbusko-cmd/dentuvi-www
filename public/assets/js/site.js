@@ -6,15 +6,22 @@
   /* menu na wąskich ekranach */
   const menuBtn = doc.querySelector('.menu-btn');
   const menu = doc.getElementById('menu');
+  // treść pod otwartym menu jest nieaktywna: fokus i kliknięcia zostają w menu
+  const behind = [doc.getElementById('tresc'), doc.querySelector('.ftr')].filter(Boolean);
   const setMenu = open => {
     body.classList.toggle('nav-open', open);
+    behind.forEach(el => { el.inert = open; });
     if (menuBtn) {
       menuBtn.setAttribute('aria-expanded', String(open));
       menuBtn.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
     }
   };
   if (menuBtn && menu) {
-    menuBtn.addEventListener('click', () => setMenu(!body.classList.contains('nav-open')));
+    menuBtn.addEventListener('click', () => {
+      const open = !body.classList.contains('nav-open');
+      setMenu(open);
+      if (open) { const first = menu.querySelector('a'); if (first) first.focus({ preventScroll: true }); }
+    });
     menu.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
     window.addEventListener('keydown', e => { if (e.key === 'Escape' && body.classList.contains('nav-open')) { setMenu(false); menuBtn.focus(); } });
     const wide = window.matchMedia('(min-width: 1061px)');
