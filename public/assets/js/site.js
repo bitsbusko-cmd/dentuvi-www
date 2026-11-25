@@ -122,7 +122,7 @@
         const res = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
         if (!res.ok) throw new Error(String(res.status));
         form.classList.add('sent');
-        say('ok', `Dziękujemy${firstName ? ', ' + firstName : ''}. Odezwiemy się, aby ustalić termin prezentacji.`);
+        say('ok', `Dziękujemy${firstName ? ', ' + firstName : ''}. Skontaktujemy się z Tobą, aby ustalić termin prezentacji.`);
       } catch (err) {
         say('no', 'Nie udało się wysłać formularza. Spróbuj ponownie albo napisz na kontakt@dentuvi.pl.');
       } finally {
