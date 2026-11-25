@@ -35,7 +35,7 @@ def jsonld(src):
     assert len(faqs) == 7, len(faqs)
     data = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'Organization', '@id': SITE + '#organizacja', 'name': 'Dentuvi', 'url': SITE,
-         'logo': SITE + 'assets/img/logo-512.png', 'email': 'kontakt@dentuvi.pl', 'slogan': 'Unified Vision & Intelligence'},
+         'logo': SITE + 'assets/img/logo-512.png', 'email': 'kontakt@dentuvi.pl', 'slogan': 'Where Dentistry Meets Digital Innovation'},
         {'@type': 'WebSite', '@id': SITE + '#witryna', 'url': SITE, 'name': 'Dentuvi', 'inLanguage': 'pl-PL',
          'publisher': {'@id': SITE + '#organizacja'}},
         {'@type': 'SoftwareApplication', '@id': SITE + '#aplikacja', 'name': 'Dentuvi',
@@ -43,20 +43,21 @@ def jsonld(src):
          'applicationSubCategory': 'System ERP dla klinik stomatologicznych i ortodontycznych',
          'operatingSystem': 'Przeglądarka internetowa', 'url': SITE, 'inLanguage': 'pl-PL',
          'image': SITE + 'assets/img/og-dentuvi.png',
-         'description': 'Dentuvi łączy recepcję, gabinety, magazyn i finanse w jednym inteligentnym systemie dla klinik '
-                        'stomatologicznych i ortodontycznych.',
+         'description': 'System ERP, który łączy organizację pracy kliniki stomatologicznej lub ortodontycznej '
+                        'z danymi potrzebnymi do podejmowania lepszych decyzji: terminarz, obsługa pacjenta, magazyn, '
+                        'rozliczenia i pulpit właściciela.',
          'publisher': {'@id': SITE + '#organizacja'},
          'featureList': [
-             'Ekran Dziś dopasowany do roli z podpowiedziami od najpilniejszych',
+             'Ekran Dziś dopasowany do roli i podpowiedzi uporządkowane według pilności',
              'Terminarz gabinetów ze stanem gabinetów na żywo',
              'Karta pacjenta z osią czasu leczenia',
              'Wizyta przy fotelu z diagramem zębów FDI',
              'Plany leczenia, ortodoncja i raty z przypomnieniami SMS',
              'Magazyn z partiami, terminami ważności i propozycjami zamówień',
              'Rejestr sterylizacji i listy kontrolne gabinetu',
-             'Pulpit zarządczy, rentowność i siedem modeli rozliczeń lekarzy',
+             'Pulpit zarządczy, rentowność i modele rozliczeń lekarzy',
              'Grafik zespołu, nieobecności i zastępstwa',
-             'Dane w Unii Europejskiej, logowanie dwuetapowe i dziennik zdarzeń',
+             'Baza danych objęta jurysdykcją UE, logowanie dwuetapowe i dziennik zdarzeń',
              'Kreator wdrożenia, który staje się panelem administracyjnym']},
         {'@type': 'FAQPage', '@id': SITE + '#pytania', 'inLanguage': 'pl-PL',
          'mainEntity': [{'@type': 'Question', 'name': strip(q), 'acceptedAnswer': {'@type': 'Answer', 'text': strip(a)}} for q, a in faqs]}]}
@@ -71,6 +72,7 @@ def typo(text):
     text = re.sub(r'(\d) (?=\d{3}(?!\d))', r'\1' + NB, text)
     text = re.sub(r'(\d) (zł|min|dni|dniach|krokach|kroków|minut|placówki|gabinety|gabinetów|gabinet)\b', r'\1' + NB + r'\2', text)
     text = re.sub(r'\b(Ctrl) (K)\b', r'\1' + NB + r'\2', text)
+    text = re.sub(r' ([—–]) ', NB + r'\1 ', text)  # myślnik nigdy na początku wiersza
     return text
 
 

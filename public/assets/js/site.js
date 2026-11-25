@@ -127,7 +127,7 @@
         say('no', 'Nie udało się wysłać formularza. Spróbuj ponownie albo napisz na kontakt@dentuvi.pl.');
       } finally {
         submit.disabled = false;
-        submit.textContent = 'Umów prezentację';
+        submit.textContent = 'Poproś o prezentację';
       }
     });
   }
