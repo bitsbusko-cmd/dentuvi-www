@@ -403,8 +403,8 @@ kbd{display:inline-block;min-width:1.6em;padding:0 .38em;border:1px solid var(--
    Tylko w przeglądarkach z animacjami sterowanymi przewijaniem i bez ograniczenia ruchu. */
 @supports (animation-timeline:view()){
   @media (prefers-reduced-motion:no-preference){
-    .stage .mac,.stage-n .mac{perspective:2200px;perspective-origin:50% 100%}
-    .stage .mac-lid,.stage-n .mac-lid{transform-origin:50% 100%;animation:lid linear both;animation-timeline:view();animation-range:cover 0% cover 42%}
+    .stage-n .mac{perspective:2200px;perspective-origin:50% 100%}
+    .stage-n .mac-lid{transform-origin:50% 100%;animation:lid linear both;animation-timeline:view();animation-range:cover 0% cover 42%}
     .stage .iph-b,.stage-n .iph-b{animation:lift linear both;animation-timeline:view();animation-range:cover 0% cover 52%}
     .dz-rooms{animation:lift linear both;animation-timeline:view();animation-range:entry 0% cover 55%}
     @keyframes lid{from{transform:rotateX(-26deg)}to{transform:none}}
