@@ -1,6 +1,6 @@
 # Dentuvi
 
-> Dentuvi — Where Dentistry Meets Digital Innovation. System ERP do cyfrowego zarządzania klinikami stomatologicznymi i ortodontycznymi w Polsce. Łączy pracę recepcji, gabinetów i zaplecza z informacjami o pacjentach, płatnościach i wynikach kliniki w jednym środowisku, które działa w przeglądarce na komputerze, tablecie i smartfonie. Nazwa pochodzi od motta Unified Vision & Intelligence: jeden system, pełny obraz, lepsze decyzje.
+> Dentuvi — Where Dentistry Meets Digital Innovation. System ERP do cyfrowego zarządzania klinikami stomatologicznymi i ortodontycznymi w Polsce. Łączy pracę recepcji, gabinetów i zaplecza z informacjami o pacjentach, płatnościach i wynikach finansowych kliniki w jednym środowisku, które działa w przeglądarce na komputerze, tablecie i smartfonie. Nazwa pochodzi od motta Unified Vision & Intelligence: jeden system, pełny obraz, lepsze decyzje.
 
 ## Funkcje
 - Ekran Dziś: podsumowanie dnia dopasowane do roli, stan gabinetów na żywo i podpowiedzi uporządkowane od najpilniejszych.
